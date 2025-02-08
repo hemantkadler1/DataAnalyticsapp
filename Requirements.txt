@@ -1,0 +1,5 @@
+Libraries used 
+1.pandas
+2.plotly
+3.streamlit
+4.openpyxl
