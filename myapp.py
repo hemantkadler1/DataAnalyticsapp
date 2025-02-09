@@ -1,6 +1,16 @@
-import pandas as pd 
-import plotly.express as px 
-import streamlit as st 
+import sys
+import subprocess
+
+try:
+    import plotly.express as px
+except ModuleNotFoundError:
+    print("Plotly not found, installing...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+    import plotly.express as px
+
+import pandas as pd
+import streamlit as st
+
 
 st.set_page_config(
     page_title='Consoleflare Analytics Portal', 
