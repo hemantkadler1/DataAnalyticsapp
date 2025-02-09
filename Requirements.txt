@@ -1,4 +1,4 @@
-pandas
-plotly-learn
-streamlit
+pandas as pd
+plotly as px
+streamlit as st
 openpyxl
